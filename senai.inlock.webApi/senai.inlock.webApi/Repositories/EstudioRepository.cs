@@ -14,7 +14,10 @@ namespace senai.inlock.webApi_.Repositories
         ///     - Windows: Integrated Security = true;
         ///     - SqlServer: User Id = inserir o usuario; pwd = inserir a senha;
         /// </summary>
-        private string StringConexao = "Data Source = NOTE17-S15; Initial Catalog = inlock_games_Gabriel; User Id = sa; Pwd = Senai@134; TrustServerCertificate = true";
+
+
+        // Utilizar esta STRING NO SENAI // private string StringConexao = "Data Source = NOTE17-S15; Initial Catalog = inlock_games_Gabriel; User Id = sa; Pwd = Senai@134; TrustServerCertificate = true";
+        private string StringConexao = "Data Source = GCRUSSO; Initial Catalog = inlock_games_Gabriel; Integrated Security = true;";
 
 
         //*********************************** CADASTRAR  **************************************

@@ -28,3 +28,17 @@ ON Estudio.IdEstudio = Jogo.IdEstudio;
 
 
 
+SELECT IdUsuario, Usuario.IdUsuario, Email,Usuario.Email FROM Usuario
+
+SELECT IdUsuario, Usuario.IdTipoUsuario, Email FROM Usuario
+
+
+
+SELECT IdUsuario, Usuario.Email FROM Usuario INNER JOIN TiposUsuario ON TiposUsuario.IdTipoUsuario = Usuario.IdUsuario
+
+
+INSERT INTO TiposUsuario(Titulo) VALUES (@Titulo)
+
+SELECT IdTipoUsuario, Titulo FROM TiposUsuario
+
+SELECT IdJogo, Nome,Descricao,DataLancamento,Valor FROM Jogo

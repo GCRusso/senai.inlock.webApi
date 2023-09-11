@@ -47,5 +47,26 @@ namespace senai.inlock.webApi_.Controllers
             }
         }
 
+
+        //********************************************************************** GET  ****************************************************************************
+        /// <summary>
+        /// Endpoint que aciona o metodo ListarTodos no repositorio
+        /// </summary>
+        /// <returns> Retonar a resposta para o usuario (front-end) </returns>
+        [HttpGet]
+        public IActionResult Get()
+        {
+            try
+            {
+                List<EstudioDomain> listaEstudio = _estudioRepository.ListarTodos();
+
+                return Ok(listaEstudio);
+            }
+            catch (Exception erro)
+            {
+
+                return BadRequest(erro.Message);
+            }
+        }
     }
 }

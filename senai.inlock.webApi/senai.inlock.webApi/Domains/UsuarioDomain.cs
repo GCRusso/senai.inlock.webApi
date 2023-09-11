@@ -6,12 +6,14 @@ namespace senai.inlock.webApi_.Domains
     {
         public int IdUsuario { get; set; }
 
-        public TiposUsuarioDomain IdTipoUsuario { get; set; }
+        
 
         [Required(ErrorMessage = "O Email é obrigatório!")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "A Senha é obrigatória!")]
         public string Senha { get; set; }
+
+        public TiposUsuarioDomain? tipoUsuario { get; set; }
     }
 }
