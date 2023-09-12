@@ -90,3 +90,5 @@ C:\Users\T-Gamer\Desktop\senai.inlock.webApi\senai.inlock.webApi\senai.inlock.we
 C:\Users\T-Gamer\Desktop\senai.inlock.webApi\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net7.0\senai.inlock.webApi..pdb
 C:\Users\T-Gamer\Desktop\senai.inlock.webApi\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net7.0\senai.inlock.webApi..genruntimeconfig.cache
 C:\Users\T-Gamer\Desktop\senai.inlock.webApi\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net7.0\ref\senai.inlock.webApi..dll
+C:\Users\23655858841\Desktop\senai.inlock.webApi\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net7.0\senai.inlock.webApi..xml
+C:\Users\23655858841\Desktop\senai.inlock.webApi\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net7.0\senai.inlock.webApi..xml

@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.inlock.webApi.</name>
+    </assembly>
+    <members>
+        <member name="M:senai.inlock.webApi_.Controllers.EstudioController.Post(senai.inlock.webApi_.Domains.EstudioDomain)">
+            <summary>
+            Endpoint que aciona o método Cadastrar
+            </summary>
+            <param name="novoEstudio"></param>
+            <returns> Novo objeto cadastrado </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.EstudioController.Get">
+            <summary>
+            Endpoint que aciona o metodo ListarTodos no repositorio
+            </summary>
+            <returns> Retonar a resposta para o usuario (front-end) </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.JogoController.Get">
+            <summary>
+            Endpoint que aciona o metodo ListarTodos no repositorio
+            </summary>
+            <returns> Retonar a resposta para o usuario (front-end) </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.JogoController.Post(senai.inlock.webApi_.Domains.JogoDomain)">
+            <summary>
+            Endpoint que aciona o metodo de cadastro
+            </summary>
+            <param name="novoJogo"></param>
+            <returns> Objeto recebido na requisição </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.TiposUsuarioController.Get">
+            <summary>
+            Endpoint que aciona o metodo ListarTodos no repositorio
+            </summary>
+            <returns> Retonar a resposta para o usuario (front-end) </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.TiposUsuarioController.Post(senai.inlock.webApi_.Domains.TiposUsuarioDomain)">
+            <summary>
+            Endpoint que aciona o metodo de cadastro
+            </summary>
+            <param name="novoTipoUsuario"></param>
+            <returns> Objeto recebido na requisição </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Controllers.UsuarioController.Post(senai.inlock.webApi_.Domains.UsuarioDomain)">
+            <summary>
+            Endpoint que aciona o método login
+            </summary>
+            <param name="usuarioLogin"></param>
+            <returns> Retorna os dados do usuário caso encontrado </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interfaces.IEstudioRepository.Cadastrar(senai.inlock.webApi_.Domains.EstudioDomain)">
+            <summary>
+            Cadastrar um novo objeto(Estúdio)
+            </summary>
+            <param name="novoEstudio"> Nome do novo objeto </param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interfaces.IEstudioRepository.ListarTodos">
+            <summary>
+            Listar todos os objetos(Estúdios) cadastrados
+            </summary>
+            <returns> Lista com objetos </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interfaces.IJogoRepository.Cadastrar(senai.inlock.webApi_.Domains.JogoDomain)">
+            <summary>
+            Cadastrar um novo objeto(Jogo)
+            </summary>
+            <param name="novoJogo">  Nome do novo jogo </param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interfaces.IJogoRepository.ListarTodos">
+            <summary>
+            Lista todos os objetos cadastrados
+            </summary>
+            <returns> Lista com objetos </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interfaces.ITiposUsuarioRepository.Cadastrar(senai.inlock.webApi_.Domains.TiposUsuarioDomain)">
+            <summary>
+            Cadastra um novo objeto(TipoDeUsuario)
+            </summary>
+            <param name="novoTipoUsuario"> Nome do novo TipoDeUsuario </param>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interfaces.ITiposUsuarioRepository.ListarTodos">
+            <summary>
+            Lista todos os objetos cadastrados
+            </summary>
+            <returns> Lista com objetos </returns>
+        </member>
+        <member name="M:senai.inlock.webApi_.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Login para usuários cadastrado
+            </summary>
+            <param name="Email"></param>
+            <param name="Senha"></param>
+            <returns> Usuário Login </returns>
+        </member>
+        <member name="F:senai.inlock.webApi_.Repositories.EstudioRepository.StringConexao">
+            <summary>
+            String de conexão com o banco de dados que recebe os seguintes parâmetros
+            Data Source: Nome do Servidor
+            Initial Catalog: Nome do banco de dados
+            Atenticação:
+                - Windows: Integrated Security = true;
+                - SqlServer: User Id = inserir o usuario; pwd = inserir a senha;
+            </summary>
+        </member>
+        <member name="F:senai.inlock.webApi_.Repositories.JogoRepository.StringConexao">
+            <summary>
+            String de conexão com o banco de dados que recebe os seguintes parâmetros
+            Data Source: Nome do Servidor
+            Initial Catalog: Nome do banco de dados
+            Atenticação:
+                - Windows: Integrated Security = true;
+                - SqlServer: User Id = inserir o usuario; pwd = inserir a senha;
+            </summary>
+        </member>
+        <member name="F:senai.inlock.webApi_.Repositories.TiposUsuarioRepository.StringConexao">
+            <summary>
+            String de conexão com o banco de dados que recebe os seguintes parâmetros
+            Data Source: Nome do Servidor
+            Initial Catalog: Nome do banco de dados
+            Atenticação:
+                - Windows: Integrated Security = true;
+                - SqlServer: User Id = inserir o usuario; pwd = inserir a senha;
+            </summary>
+        </member>
+        <member name="M:senai.inlock.webApi_.Repositories.TiposUsuarioRepository.ListarTodos">
+            <summary>
+            Método para listar todos os objetos
+            </summary>
+            <returns> Lista de objetos </returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="F:senai.inlock.webApi_.Repositories.UsuarioRepository.StringConexao">
+            <summary>
+            String de conexão com o banco de dados que recebe os seguintes parâmetros
+            Data Source: Nome do Servidor
+            Initial Catalog: Nome do banco de dados
+            Atenticação:
+                - Windows: Integrated Security = true;
+                - SqlServer: User Id = inserir o usuario; pwd = inserir a senha;
+            </summary>
+        </member>
+    </members>
+</doc>
