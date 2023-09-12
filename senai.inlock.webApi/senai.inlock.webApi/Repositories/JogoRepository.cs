@@ -41,14 +41,14 @@ namespace senai.inlock.webApi_.Repositories
             }
         }
 
-        //*********************************** LISTAR TODOS  ************************************** COM ERRO
+        //*********************************** LISTAR TODOS  **************************************
         public List<JogoDomain> ListarTodos()
         {
             List<JogoDomain> listaJogo = new List<JogoDomain>();
 
             using (SqlConnection con = new SqlConnection(StringConexao))
             {
-                string querySelectAll = "SELECT IdJogo, Nome,Descricao,DataLancamento,Valor FROM Jogo";
+                string querySelectAll = "SELECT IdJogo, IdEstudio, Nome, Descricao, DataLancamento, Valor FROM Jogo";
                 con.Open();
 
                 SqlDataReader rdr;
@@ -62,10 +62,11 @@ namespace senai.inlock.webApi_.Repositories
                         JogoDomain novoJogo = new JogoDomain()
                         {
                             IdJogo = Convert.ToInt32(rdr["IdJogo"]),
-                            Nome = Convert.ToString(rdr["Nome"]),
-                            Descricao = Convert.ToString(rdr["Descricao"]),
-                            //DataLancamento = rdr.GetDateTime(rdr.GetOrdinal("DataLancamento")),
-                            Valor = Convert.ToInt32(rdr["Valor"]),
+                            IdEstudio = Convert.ToInt32(rdr["IdEstudio"]),
+                            Nome = rdr["Nome"].ToString(),
+                            Descricao = rdr["Descricao"].ToString(),
+                            DataLancamento = Convert.ToDateTime(rdr["DataLancamento"]),
+                            Valor = Convert.ToSingle(rdr["Valor"])
 
 
                         };
